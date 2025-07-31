@@ -1,0 +1,19 @@
+RewriteEngine On
+
+# Redirect root URL to /home
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /home [L,R=301]
+RewriteRule ^test$ /home [L,R=301]
+
+# Internally rewrite URLs to .html files if they exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L,QSA]
+
+# Redirect requests from .html URLs to non-.html URLs
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+)\.html\ HTTP/
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# Specific rule to redirect /landing to /landing.html
+RewriteRule ^landing$ /landing.html [NC,L]
