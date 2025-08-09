@@ -1,6 +1,9 @@
 {
   "routes": [
     { "src": "/$", "dest": "/index.html" },
-    { "src": "/([^/]+)$", "dest": "/$1.html" }
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/booking", "dest": "/booking.html" },
+    { "src": "/contact", "dest": "/contact.html" },
+    { "src": "/services", "dest": "/services.html" }
   ]
 }
