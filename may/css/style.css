@@ -173,7 +173,7 @@ img {
   color: #91AC8F !important; }
 
 .theme1 {
-  color: #fdc703 !important; }
+  color: #91AC8F !important; }
 
 .theme2 {
   color: #4B5945 !important; }
@@ -197,7 +197,7 @@ img {
   background: #91AC8F !important; }
 
 .bg-theme1 {
-  background: #fdc703 !important; }
+  background: #91AC8F !important; }
 
 .bg-theme2 {
   background: #088dd1 !important; }
@@ -795,7 +795,7 @@ button {
     height: 100%;
     top: 0;
     content: '';
-    background: #fdc703;
+    background: #91AC8F;
     color: #fff !important;
     transition: all ease-in-out 0.5s;
     z-index: -1; }
@@ -814,7 +814,7 @@ button {
     background: #fff;
     color: #3f3f3f; }
     .nir-btn-black:hover:before {
-      color: #fdc703; }
+      color: #91AC8F; }
 
 input#submit {
   border: none; }
@@ -848,7 +848,7 @@ input#submit:hover {
   right: 16px; }
 
 .banner-slider .slick-prev, .banner-slider .slick-next {
-  background: #fdc703;
+  background: #91AC8F;
   border-radius: 50%;
   width: 50px;
   height: 50px; }
@@ -952,7 +952,7 @@ input#submit:hover {
     display: block;
     width: 225px;
     padding: 10px 0;
-    background-color: #fdc703;
+    background-color: #91AC8F;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     color: #fff;
     font-size: 18px;
@@ -2307,7 +2307,7 @@ nav.navbar.navbar-default.navbar-sticky-in .logo-black {
     width: 50px;
     border-radius: 50%; }
   .banner .swiper-button-next:hover:after, .banner .swiper-button-prev:hover:after {
-    background: #fdc703;
+    background: #91AC8F;
     color: #fff;
     transition: all ease-in-out 0.5s; }
   .banner .slider-before:before {
@@ -2380,7 +2380,7 @@ nav.navbar.navbar-default.navbar-sticky-in .logo-black {
   .banner .slider .swiper-container .slider-before .swiper-content {
     top: 50% !important; }
   .banner .slider .swiper-container .slider-before:before {
-    background: #fdc703;
+    background: #91AC8F;
     width: 100%;
     opacity: 0.7; }
   .banner .slider .swiper-container .slider-before span a, .banner .slider .swiper-container .slider-before h1 a, .banner .slider .swiper-container .slider-before p {
@@ -3220,7 +3220,7 @@ ul.social-with-text li {
       bottom: 0;
       left: 0;
       border-radius: 50%;
-      border: 2px solid #fdc70380;
+      border: 2px solid #91AC8F80;
       opacity: 0.3; }
     .call-button button.play-btn::before {
       -webkit-animation: ripple 2s linear infinite;
@@ -4588,7 +4588,7 @@ section.comingsoon {
         padding: 15px 24px;
         transition: all ease-in-out 0.5s; }
         .newsletter .newsletter-form form button:hover {
-          background: #fdc703 !important;
+          background: #91AC8F !important;
           transition: all ease-in-out 0.5s;
           color: #fff;
           opacity: 0.8; }
@@ -4896,10 +4896,10 @@ footer.footermain {
       width: 40px;
       background: #fff; }
   .list-results .change-list.f-active i, .list-results .change-grid.f-active i {
-    background: #fdc703;
+    background: #91AC8F;
     color: #fff;
     transition: all ease-in-out 0.5s;
-    border-color: #fdc703; }
+    border-color: #91AC8F; }
 
 .form-find .nice-select {
   line-height: 2; }
