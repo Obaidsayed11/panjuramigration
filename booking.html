@@ -203,7 +203,7 @@
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index.html">
                             <img src="may/images/Screenshot&#32;2024-08-20&#32;155439.png" alt="image"
-                                style="width: 170px; height: 80px; object-fit: cover" />
+                               style="width: 160px; height: 100px;  object-fit: fill; margin-top:-12px; margin-bottom:-7px" />
                         </a>
                     </div>
 
@@ -1103,6 +1103,15 @@ document.getElementById("bookingForm").addEventListener("submit", function (e) {
 });
 </script> -->
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+<script type="text/javascript">
+   (function(){
+      emailjs.init("HnIhNcs-SoMs7lqle"); // Replace with your EmailJS public key
+   })();
+</script>
+
 <script>
 document.getElementById('bookingForm').addEventListener('submit', function (event) {
   event.preventDefault();
@@ -1134,6 +1143,25 @@ document.getElementById('bookingForm').addEventListener('submit', function (even
       submitBtn.value = 'Book Now';
 
       if (response.result === 'success') {
+         let params = {
+    fname: document.querySelector("#fname").value,
+    lname:document.querySelector("#lname").value,
+    country:document.querySelector("#country").value,
+    visa:document.querySelector("#visa").value,
+    email:document.querySelector("#email").value,
+    country_code:document.querySelector("#country_code").value,
+
+   phone:document.querySelector("#phone").value,
+      address:document.querySelector("#address").value,
+      occupation:document.querySelector("#occupation").value,
+
+   };
+   let serviceID =  "service_1no3dnp" ;  //service_ngqv3v6   // template_gqf4sho
+   let templateID = "template_uu7ojau"
+
+   emailjs.send(serviceID,templateID,params)
+
+
         Swal.fire({
           title: 'Success!',
           text: 'Your booking has been submitted successfully!',
