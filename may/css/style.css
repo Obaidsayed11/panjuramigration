@@ -869,7 +869,7 @@ input#submit:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #f4f4f4;
+  background: #ffffff;
   z-index: 999999; }
   #preloader #status {
     position: fixed;
@@ -880,7 +880,7 @@ input#submit:hover {
     width: 400px;
     height: 300px;
     margin: 0 auto;
-    background: url(../images/loader.gif);
+    background: url(../images/loader2.gif);
     background-size: cover;
     background-position: center;
     opacity: 1;
